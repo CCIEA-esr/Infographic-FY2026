@@ -48,6 +48,10 @@ li {
   font-size: 3rem;
 }
 
+#modal-title {
+  font-size: 3rem;
+}
+
 .switch {
   position: relative;
   display: inline-block;
