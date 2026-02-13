@@ -1,26 +1,25 @@
-icon,section,order,title,link
-key,About,1,"Key 20245Takeaways",modals/key.html
-el_nino,"Climate/Ocean Drivers",1,"Basin Scale Conditions",modals/el_nino.html
-marine_heatwave,"Climate/Ocean Drivers",2,"Marine Heatwave (SSTa)",modals/marine_heatwave.html
-snowpack_N,"Climate/Ocean Drivers",3,"Snowpack North",modals/snowpack_N.html
-snowpack,"Climate/Ocean Drivers",4,Snowpack,modals/snowpack.html
-snowpack_S,"Climate/Ocean Drivers",5,"Snowpack South",modals/snowpack_S.html
-flow_N,"Climate/Ocean Drivers",6,"Stream Flow North Ecoregions",modals/flow_N.html
-flow_S,"Climate/Ocean Drivers",7,"Stream Flow South Ecoregions",modals/flow_S.html
-upwelling_45N,"Climate/Ocean Drivers",8,"Upwelling 45N",modals/upwelling_45N.html
-upwelling_39N,"Climate/Ocean Drivers",9,"Upwelling 39N",modals/upwelling_39N.html
-upwelling_33N,"Climate/Ocean Drivers",10,"Upwelling 33N",modals/upwelling_33N.html
-drought,"Climate/Ocean Drivers",11,Drought,modals/drought.html
-krill,Ecology,1,Krill,modals/krill.html
-habs_N,Ecology,2,"Harmful Algal Blooms - Crab Closures",modals/habs_N.html
-habs_S,Ecology,3,"Harmful Algal Blooms - Marine Mammals",modals/habs_S.html
-forage_c,Ecology,4,"Forage Central - RREAS survey",modals/forage_c.html
-forage_s,Ecology,5,"Forage South - CalCOFI survey",modals/forage_s.html
-adult_salmon_N,Ecology,6,"Salmon, Adult returns - Columbia River",modals/adult_salmon_N.html
-juv_salmon_S,Ecology,7,"Salmon, Juvenile outmigration - CA",modals/juv_salmon_S.html
-rockfish,Ecology,8,"Groundfish recruitment",modals/rockfish.html
-murre,Ecology,9,"Seabird productivity - SE Farallon Island",modals/murre.html
-whale_entanglement,Ecology,10,"Whale Entanglement",modals/whale_entanglement.html
-boat,"Human Communities",1,"Commercial Fishery Landings",modals/boat.html
-boat_dollar,"Human Communities",2,"Commercial Fishery Revenue",modals/boat_dollar.html
-community,"Human Communities",3,"Community Vulnerability - Fishing Reliance",modals/community.html
+"icon","section","order","title","link"
+"key","About",1,"Key 20256Takeaways","modals/key.html"
+"el_nino","Climate/Ocean Drivers",1,"Basin Scale Conditions","modals/el_nino.html"
+"marine_heatwave","Climate/Ocean Drivers",2,"Marine Heatwave (SSTa)","modals/marine_heatwave.html"
+"snowpack_N","Climate/Ocean Drivers",3,"Snowpack North","modals/snowpack_N.html"
+"snowpack","Climate/Ocean Drivers",4,"Snowpack","modals/snowpack.html"
+"snowpack_S","Climate/Ocean Drivers",5,"Snowpack South","modals/snowpack_S.html"
+"flow_N","Climate/Ocean Drivers",6,"Stream Flow North Ecoregions","modals/flow_N.html"
+"flow_S","Climate/Ocean Drivers",7,"Stream Flow South Ecoregions","modals/flow_S.html"
+"upwelling_45N","Climate/Ocean Drivers",8,"Upwelling 45N","modals/upwelling_45N.html"
+"upwelling_39N","Climate/Ocean Drivers",9,"Upwelling 39N","modals/upwelling_39N.html"
+"upwelling_33N","Climate/Ocean Drivers",10,"Upwelling 33N","modals/upwelling_33N.html"
+"drought","Climate/Ocean Drivers",11,"Drought","modals/drought.html"
+"krill","Ecology",1,"Krill","modals/krill.html"
+"habs_N","Ecology",2,"Harmful Algal Blooms - Crab Closures","modals/habs_N.html"
+"habs_S","Ecology",3,"Harmful Algal Blooms - Domoic Acid","modals/habs_S.html"
+"forage","Ecology",5,"Forage South - CalCOFI survey","modals/forage.html"
+"adult_salmon_N","Ecology",6,"Salmon, Adult returns - Columbia River","modals/adult_salmon_N.html"
+"juv_salmon_S","Ecology",7,"Salmon, Juvenile outmigration - CA","modals/juv_salmon_S.html"
+"rockfish","Ecology",8,"Groundfish recruitment","modals/rockfish.html"
+"murre","Ecology",9,"Seabird productivity - SE Farallon Island","modals/murre.html"
+"whale_entanglement","Ecology",10,"Whale Entanglement","modals/whale_entanglement.html"
+"boat","Human Communities",1,"Commercial Fishery Landings","modals/boat.html"
+"boat_dollar","Human Communities",2,"Commercial Fishery Revenue","modals/boat_dollar.html"
+"community","Human Communities",3,"Community Vulnerability - Fishing Reliance","modals/community.html"
