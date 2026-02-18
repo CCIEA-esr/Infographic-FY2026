@@ -17,3 +17,12 @@ All updates are done in the Google Drive Infographic Folder for the current year
 *  Figure names in column F can be anything, but the names in this column **must agree** with the actual figure names in the figure folder
 *  The text in column G gets placed in bold above the figure in each modal popup
 *  mouseover column H is not currently used
+
+## GitHub Action
+
+*  Use the workflow dispatch on "Generate Modal html files" GitHub Action
+*  Reads the icon_link table on Google Drive
+*  Downloads all figures
+*  Generates the modal html files
+*  Commits the new files to the main branch
+*  The commit triggers the page to be re-built and deployed
