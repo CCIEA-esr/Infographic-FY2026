@@ -5,38 +5,24 @@
 # Use the following to update on push
 #    on:
 #      push:
-#        branches: master
+#        branches: main
     on:
       workflow_dispatch:
       
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
-      
-    concurrency:
-      group: "pages"
-      cancel-in-progress: false
-
     jobs:
       generate-html:
-        environment:
-          name: github-pages
         runs-on: ubuntu-latest
         steps:
           - name: Check out repository
             uses: actions/checkout@v4
+            # Important: set fetch-depth to 0 so the action can push back to the repo
+            with:
+              fetch-depth: 0
 
           - name: Authenticate to Google Cloud
             uses: google-github-actions/auth@v2
             with:
               credentials_json: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
-              
-          - name: Install system dependencies
-            run: |
-              sudo apt-get update
-              sudo apt-get install -y libcairo2-dev pkg-config
               
           - name: Set up R
             uses: r-lib/actions/setup-r@v2
@@ -60,16 +46,4 @@
               git add modals/*
               git commit -m 'Data updated' || echo "No changes to commit"
               git push origin || echo "No changes to commit"
-              
-          - name: Setup Pages
-            uses: actions/configure-pages@v5
-
-          - name: Upload artifact
-            uses: actions/upload-pages-artifact@v3
-            with:
-              path: '.'
-
-          - name: Deploy to GitHub Pages
-            id: deployment
-            uses: actions/deploy-pages@v4
 
