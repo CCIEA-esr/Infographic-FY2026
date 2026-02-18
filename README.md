@@ -18,11 +18,21 @@ All updates are done in the Google Drive Infographic Folder for the current year
 *  The text in column G gets placed in bold above the figure in each modal popup
 *  mouseover column H is not currently used
 
-## GitHub Action
+## GitHub Action to Update Modal html files
 
-*  Use the workflow dispatch on "Generate Modal html files" GitHub Action
-*  Reads the icon_link table on Google Drive
-*  Downloads all figures
-*  Generates the modal html files
-*  Commits the new files to the main branch
-*  The commit triggers the page to be re-built and deployed
+*  How to start the GitHub action workflow
+   +  go to the Actions tab, click on "Generate Modal html files" in the left menu
+   +  click on "Run workflow" on the right, and again on the green "Run workflow" button ("Branch main" is the only branch choice)
+   +  the action will have a yellow animation until it finishes
+   +  after the action finishes (turns green), a new action called "pages-build deployment" starts
+   +  after the deployment action ends, the updates to the infographio will be available at <https://cciea-esr.github.io/Infographic-FY2026/>
+*  What does the Action do?
+   +  Reads the icon_link table on Google Drive
+   +  Downloads all figures
+   +  Generates the modal html files
+   +  Commits the new files to the main branch
+   +  The commit triggers the page to be re-built and deployed
+ 
+  ## Troubleshooting
+
+*  The most likey cause of either the Action crashing or the modal files missing text or figures is not following the rules in the "How to update the Icon table" section
