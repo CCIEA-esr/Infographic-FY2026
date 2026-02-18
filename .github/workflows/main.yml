@@ -21,6 +21,8 @@
 
     jobs:
       generate-html:
+        environment:
+          name: github-pages
         runs-on: ubuntu-latest
         steps:
           - name: Check out repository
@@ -65,7 +67,6 @@
           - name: Upload artifact
             uses: actions/upload-pages-artifact@v3
             with:
-              # Upload entire repository
               path: '.'
 
           - name: Deploy to GitHub Pages
