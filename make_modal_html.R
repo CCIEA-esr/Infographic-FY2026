@@ -7,8 +7,8 @@ library(stringr)
 library(dplyr)
 
 # --- Configuration ---
-out_dir <- "modals_2025-2026"
-link_table_file <- "icon_link_2025-2026.csv"
+out_dir <- "modals"
+link_table_file <- "icon_link.csv"
 file_id <- "1PElkUJ2b0bIbb4q2zHzPYKbacThBg-qVFqzgaNyKa-A"
 image_folder_id <- "1-77QYFK0qVkHAPplms0gUo0Y7YHXp4tx"
 
