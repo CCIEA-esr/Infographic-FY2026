@@ -158,32 +158,32 @@ function link_svg({svg, csv, svg_id = 'svg', toc_id = 'toc', hover_color = 'yell
         }
       }
 
-      if (toc_style === "accordion" || toc_style === "sectioned_list") {
-    data = data.sort(function(a, b) {
-        // Ensure defaults are numbers
-        const aOrder = a.order === undefined ? 0 : +a.order;
-        const bOrder = b.order === undefined ? 0 : +b.order;
-        
-        // Use + to force numeric context for d3.ascending
-        return d3.ascending(+a.section, +b.section) || 
-               d3.ascending(aOrder, bOrder) || 
-               d3.ascending(a.title, b.title);
-    });
+      if (toc_style === "accordion" | toc_style === "sectioned_list"){
+        data = data.sort(
+          function(a,b) { 
+            if (a.order === undefined){a.order=0};
+            if (b.order === undefined){b.order=0};
 
-    var section_list = [];
-    data.forEach(function(d) {
-        if (section_list.length === 0 || section_list[section_list.length - 1] !== d.section) {
+            return d3.ascending(a.section, b.section) || d3.ascending(+a.order, +b.order) || d3.ascending(a.title, b.title);
+          }
+        );
+        var section_list = [];
+        data.forEach(function(d) {
+          if (section_list.length == 0 | section_list[section_list.length - 1] != d.section){
             section_list.push(d.section);
-        }
-    });
-} else {
-    data = data.sort(function(a, b) {
-        const aOrder = a.order === undefined ? 0 : +a.order;
-        const bOrder = b.order === undefined ? 0 : +b.order;
-        
-        return d3.ascending(aOrder, bOrder) || d3.ascending(a.title, b.title);
-    });
-}
+          }
+        })
+      }
+      else {
+        data = data.sort(
+          function(a,b) { 
+            if (a.order === undefined){a.order=0};
+            if (b.order === undefined){b.order=0};
+            return d3.ascending(+a.order, +b.order) || d3.ascending(a.title, b.title); 
+          }
+        );
+      }
+
       section_color_index = 0;
 
       if (toc_style === "accordion"){
