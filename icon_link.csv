@@ -16,7 +16,7 @@
 "habs_S","Ecology",3,"Harmful Algal Blooms - Domoic Acid","modals/habs_S.html"
 "forage_S","Ecology",4,"Forage South - CalCOFI survey","modals/forage_S.html"
 "adult_salmon_N","Ecology",5,"Salmon, Adult returns - Columbia River","modals/adult_salmon_N.html"
-"juv_salmon_S","Ecology",6,"Salmon, Juvenile outmigration - CA","modals/juv_salmon_S.html"
+"juv_salmon","Ecology",6,"Salmon, Juvenile outmigration - NCC","modals/juv_salmon.html"
 "rockfish","Ecology",7,"Groundfish recruitment","modals/rockfish.html"
 "murre","Ecology",8,"Seabird productivity - SE Farallon Island","modals/murre.html"
 "whale_entanglement","Ecology",9,"Whale Entanglement","modals/whale_entanglement.html"
