@@ -43,7 +43,8 @@
               git config --local user.name "GitHub Actions"
               git add icon_link.csv
               git add modals/*
-              git add modals/*
+              git add index.html
+              git add *.svg
               git commit -m 'Data updated' || echo "No changes to commit"
               git push origin || echo "No changes to commit"
 
