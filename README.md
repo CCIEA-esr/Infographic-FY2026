@@ -20,11 +20,10 @@ All updates are done in the Google Drive Infographic Folder for the current year
 
 ## How to update the background image and/or prepare for a new year
 
-* Either:
+* To update the background image, do one of the following:
    +  rename the new image to be the same as the old one and commit/push the new image to GitHub or
-   +  edit index.html to change the image name (two places) and commit/push both index.html and the new image to GitHub
+   +  edit index.html to change the image name (two places) then commit/push both index.html and the new image to GitHub
 *  For a new year, also edit the <title> tag in index.html and commit/push index.html to GitHub
-
 
 ## GitHub Action to Update Modal html files
 
