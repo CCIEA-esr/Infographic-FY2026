@@ -46,3 +46,7 @@ All updates are done in the Google Drive Infographic Folder for the current year
 *  If new changes fail to load, check Settings -> Pages. Set Build and deployment as follows:
    + Deploy from Branch
    + Branch: main -> /(root)
+*  If an Action fails with authentication errors on reading the Google Drive Icon Link Table, it is likely because the GOOGLE_APPLICATION_CREDENTIALS are no longer valid. The new credential can be created in the Google Cloud Console: IAM & Admin -> IAM
+   + Go to Settings -> Secrets and variables -> Actions
+   + Remove (trash can icon) the old credential then copy/paste the new one into the box provided
+   
