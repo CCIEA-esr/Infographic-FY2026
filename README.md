@@ -18,6 +18,14 @@ All updates are done in the Google Drive Infographic Folder for the current year
 *  The text in column G gets placed in bold above the figure in each modal popup
 *  mouseover column H is not currently used
 
+## How to update the background image and/or prepare for a new year
+
+* Either:
+   +  rename the new image to be the same as the old one and commit/push the new image to GitHub or
+   +  edit index.html to change the image name (two places) and commit/push both index.html and the new image to GitHub
+*  For a new year, also edit the <title> tag in index.html and commit/push index.html to GitHub
+
+
 ## GitHub Action to Update Modal html files
 
 *  How to start the GitHub action workflow
@@ -33,6 +41,9 @@ All updates are done in the Google Drive Infographic Folder for the current year
    +  Commits the new files to the main branch
    +  The commit triggers the page to be re-built and deployed
  
-  ## Troubleshooting
+## Troubleshooting
 
 *  The most likey cause of either the Action crashing or the modal files missing text or figures is not following the rules in the "How to update the Icon table" section
+*  If new changes fail to load, check Settings -> Pages. Set Build and deployment as follows:
+   + Deploy from Branch
+   + Branch: main -> /(root)
